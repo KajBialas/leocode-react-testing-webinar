@@ -1,5 +1,6 @@
 import React from 'react';
 import TopBar from './components/TopBar';
+import Counter from './components/Counter';
 
 function App() {
   return (
