@@ -12,4 +12,9 @@ describe('TopBar Component', () => {
     expect(getByTestId('testid')).toHaveTextContent('Hello!');
     expect(getByText('Hello!')).toHaveClass('topBar');
   });
+
+  it('should match snapshot', () => {
+    const { asFragment } = render(<TopBar text="Hello!" />);
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
